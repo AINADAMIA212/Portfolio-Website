@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Journey Through Knowledge</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="top-bar">
+    EVERYDAY IS LESSON FOR US ENJOY YOUR LIFE!
+  </div>
+
+  <header>
+    <div class="nav-container">
+      <nav class="nav-links">
+        <a href="homepage.html">🏠Home</a>
+        <a href="student.html">👩‍🎓Student Profile</a>
+        <a href="about.html">👤About</a>
+        <a href="education.html">🎓Education</a>
+        <a href="skills.html">🧠Skills</a>
+        <a href="contact.html">📞Contact</a>
+      </nav>
+
+      <div class="logo">
+        JOURNEY THROUGH <span>Knowledge</span><br />
+        <small>AINA' ✦ DAMIA</small>
+      </div>
+
+      <div class="icons">
+        <button class="contact-btn" id="contactBtn">CONTACT ME</button>
+      </div>
+      <script>
+      document.getElementById('contactBtn').addEventListener('click', function() {
+      window.location.href = 'contactme.html';});
+      </script>
+    </div>
+  </header>
+
+  <section class="hero-section">
+    <div class="hero-left">
+      <h1>HYE !<br>I AM NURUL AINA' DAMIA<br>BINTI ZUBIR</h1>
+      <p class="script">Hope you're enjoy looking my website portfolio!</p>
+      <div class="more-container">
+  <button id="MoreBtn" class="more-btn">More</button>
+  <div id="dropdownMenu" class="dropdown-menu">
+    <a href="achievement.html">🏆Achievement</a>
+    <a href="project.html">💻Project</a>
+  </div>
+      </div>
+    </div>
+
+  <script>
+  const btn = document.getElementById("MoreBtn");
+  const menu = document.getElementById("dropdownMenu");
+
+  btn.addEventListener("click", function () {
+    menu.style.display = menu.style.display === "block" ? "none" : "block";
+  });
+
+  // Optional: close dropdown if click outside
+  window.addEventListener("click", function (e) {
+    if (!btn.contains(e.target) && !menu.contains(e.target)) {
+      menu.style.display = "none";
+    }
+  });
+</script>
+    
+  <div class="hero-right">
+      <img src="image/profileformal.png" alt="Profile" class="myimg"/>
+    </div>
+  </section>
+
+  <section class="curve-section">
+    <h2>Elevate  your life</h2>
+    <p>One step at a time.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Journey.Through.Knowledge. All Rights Reserved.</footer>
+
+</body>
+</html>
